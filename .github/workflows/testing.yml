@@ -1,4 +1,4 @@
-name: "Unit tests"
+name: Unit tests
 
 on: [pull_request]
 
@@ -6,7 +6,7 @@ jobs:
   tests:
     runs-on: ubuntu-latest
 
-    setps:
+    steps:
       - uses: actions/checkout@v2
 
       - name: Install Node
@@ -16,6 +16,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Build
+        run: npm run build
 
       - name: Run tests
         run: npm run test
