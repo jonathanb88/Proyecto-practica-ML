@@ -16,7 +16,7 @@ services:
     image: dpage/pgadmin4
     environment:
       PGADMIN_DEFAULT_EMAIL: "business88jb@gmail.com"
-      PGADMIN_DEFAULT_PASSWORD: "j7812ljnjJ"
+      PGADMIN_DEFAULT_PASSWORD: "admin"
     ports:
       - "5050:5050" # Map host port 5050 to container port 5050
     depends_on:
